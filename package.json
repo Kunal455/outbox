@@ -1,0 +1,20 @@
+{
+  "name": "reachinbox-monorepo-root",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "reachinbox-scheduler/backend",
+    "reachinbox-scheduler/frontend"
+  ],
+  "scripts": {
+    "dev:backend": "npm --prefix reachinbox-scheduler/backend run dev:server",
+    "dev:worker": "npm --prefix reachinbox-scheduler/backend run dev:worker",
+    "dev:frontend": "npm --prefix reachinbox-scheduler/frontend run dev",
+    "build": "npm --prefix reachinbox-scheduler/backend run build && npm --prefix reachinbox-scheduler/frontend run build",
+    "test": "npm --prefix reachinbox-scheduler/backend test && npm --prefix reachinbox-scheduler/frontend test",
+    "test:backend": "npm --prefix reachinbox-scheduler/backend test",
+    "test:frontend": "npm --prefix reachinbox-scheduler/frontend test",
+    "docker:up": "docker compose -f reachinbox-scheduler/docker-compose.yml up -d",
+    "docker:down": "docker compose -f reachinbox-scheduler/docker-compose.yml down"
+  }
+}

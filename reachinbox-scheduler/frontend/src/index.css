@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-[#F8FAFC] text-slate-800 font-sans antialiased;
+    overflow-x: hidden;
+  }
+}
+
+/* Custom modern scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* Clean SaaS card and table styling */
+.saas-card {
+  @apply bg-white border border-slate-100 rounded-2xl shadow-sm transition-all;
+}
+
+.table-row-hover {
+  transition: all 0.15s ease-in-out;
+}
+.table-row-hover:hover {
+  background-color: rgba(248, 250, 252, 0.9);
+}

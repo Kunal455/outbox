@@ -1,0 +1,9 @@
+name,email,company,title
+Sarah Connor,sarah.connor@cyberdyne.io,Cyberdyne Systems,VP Engineering
+John Doe,john.doe@innovate.co,Innovate Co,Lead Architect
+Alex Rivera,alex.rivera@outboxlabs.com,Outbox Labs,Senior Developer
+Maya Patel,maya.patel@reachinbox.ai,ReachInbox,Growth Lead
+David Kim,david.kim@fintech.net,Fintech Global,CTO
+Elena Rostova,elena.rostova@cloudscale.org,CloudScale,Staff DevOps
+Sarah Connor,sarah.connor@cyberdyne.io,Cyberdyne Systems,Duplicate Check
+invalid-email-address-test,,,Ignored Syntax
